@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Precio from './Precio';
 
-const Carrito = ({ products }) => {
+const Carrito = ({ products, handleClick, filtrar }) => {
 	const [total, setTotal] = useState(0);
 
 	useEffect(() => {
@@ -14,7 +14,7 @@ const Carrito = ({ products }) => {
 			<div className="carrito__container">
 				<h3>Precio Total</h3>
 				{products.map((item) => (
-					<Precio item={item} key={item.id} />
+					<Precio item={item} key={item.id} handleClick={handleClick} filtrar={filtrar} />
 				))}
 				<p className="total">Total de la orden: ${total} USD</p>
 				<button>Pagar</button>

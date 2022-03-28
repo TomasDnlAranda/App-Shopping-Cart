@@ -17,12 +17,24 @@ function App() {
 			setProducts(sumarCantidad);
 		}
 	};
+
+	const handleClick = (id) => {
+		const restar = products.map((item) =>
+			item.id === id ? { ...item, cantidad: item.cantidad - 1 } : item
+		);
+		setProducts(restar);
+	};
+
+	const filtrar = (id) => {
+		const filtrar = products.filter((product) => product.cantidad !== 0);
+		setProducts(filtrar);
+	};
 	return (
 		<>
 			<Navbar />
 			<div className="container-all">
 				<Product dataArr={dataArr} />
-				<Carrito products={products} />
+				<Carrito products={products} handleClick={handleClick} filtrar={filtrar} />
 			</div>
 		</>
 	);

@@ -84,38 +84,42 @@ nav h1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   font-size: 1rem;
   font-weight: 600;
   color: #555555;
   margin: 0 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .carrito__container div .cantidad {
-  width: 10%;
+  width: 5%;
 }
 
 .carrito__container div .price {
-  width: 40%;
+  text-align: center;
+  width: 30%;
 }
 
 .carrito__container div .disco {
-  width: 40%;
+  width: 60%;
+  text-align: center;
 }
 
-.carrito__container .total,
-.carrito__container p {
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  margin: 0.3rem 3rem;
-  color: #555555;
+.carrito__container div i {
+  color: #bd0000;
+  cursor: pointer;
+  width: 5%;
 }
 
 .carrito__container .total {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
   margin: 2rem 0 0;
+  color: #555555;
 }
 
 .carrito__container button {
