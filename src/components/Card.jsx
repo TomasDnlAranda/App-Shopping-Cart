@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = ({ item, handleClick }) => {
 	const { artista, disco, img, id, price } = item;

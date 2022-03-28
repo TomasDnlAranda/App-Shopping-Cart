@@ -1,7 +1,6 @@
 @import './variable.scss';
 @import './mixin.scss';
 
-
 .carrito__container {
 	@include border(1px solid $border, null);
 	@include box(null, 0.5rem 0.5rem);
@@ -12,28 +11,32 @@
 	}
 	div {
 		@include size(100%, null);
-		@include flex(space-evenly, center, null, null);
+		@include flex(space-evenly, start, null, null);
 		@include font(1rem, 600, null);
 		@include color($text-card, null);
 		@include box(null, 0 0 0.5rem);
+		padding: 0 0.5rem;
 		.cantidad {
-			@include size(10%, null);
+			width: 5%;
 		}
 		.price {
-			@include size(40%, null);
+			text-align: center;
+			width: 30%;
 		}
 		.disco {
-			@include size(40%, null);
+			width: 60%;
+			text-align: center;
+		}
+		i {
+			color: #bd0000;
+			cursor: pointer;
+			width: 5%;
 		}
 	}
-	.total,
-	p {
-		@include font(1rem, 600, center);
-		@include box(null, 0.3rem 3rem);
-		@include color($text-card, null);
-	}
 	.total {
+		@include font(1rem, 600, center);
 		@include box(null, 2rem 0 0);
+		@include color($text-card, null);
 	}
 	button {
 		@include color($white, $btn-pay);
