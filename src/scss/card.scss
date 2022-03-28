@@ -1,0 +1,36 @@
+@import './variable.scss';
+@import './mixin.scss';
+
+.card__container {
+	@include border(1px solid $border, null);
+	@include size(max-content, null);
+	@include box(0.5rem, 0.5rem 0.5rem);
+	.card__container-img {
+		img {
+			@include size(200px, auto);
+		}
+	}
+	h4 {
+		@include color($name-disc, null);
+		@include font(1rem, bold, center);
+	}
+	h3 {
+		@include font(null, null, center);
+		@include box(null, 0.5rem 0 0);
+	}
+	p {
+		@include color($text-card, null);
+		@include font(null, null, center);
+	}
+	button {
+		@include color($white, $btn-agg);
+		@include border(none, 0.25rem);
+		@include font(0.85rem, null, center);
+		@include box(0.3rem 0.75rem, 0 auto);
+		@include flex(center, null, null, null);
+		transition: all 0.5s;
+		&:hover {
+			@include color(null, #25cf4f);
+		}
+	}
+}

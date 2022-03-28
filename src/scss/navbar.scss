@@ -1,0 +1,12 @@
+@import './variable.scss';
+@import './mixin.scss';
+
+nav {
+	@include color($white, $bg-navbar);
+	h1 {
+		font-family: 'Poppins', sans-serif;
+		@include color($white, null);
+		@include font(1.5rem, 500, null);
+		@include box(0.75rem, null);
+	}
+}

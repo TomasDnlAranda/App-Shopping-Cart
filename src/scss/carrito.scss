@@ -1,0 +1,49 @@
+@import './variable.scss';
+@import './mixin.scss';
+
+
+.carrito__container {
+	@include border(1px solid $border, null);
+	@include box(null, 0.5rem 0.5rem);
+	@include size(40%, null);
+	h3 {
+		@include font(null, null, center);
+		@include box(null, 0 0 2.5rem);
+	}
+	div {
+		@include size(100%, null);
+		@include flex(space-evenly, center, null, null);
+		@include font(1rem, 600, null);
+		@include color($text-card, null);
+		@include box(null, 0 0 0.5rem);
+		.cantidad {
+			@include size(10%, null);
+		}
+		.price {
+			@include size(40%, null);
+		}
+		.disco {
+			@include size(40%, null);
+		}
+	}
+	.total,
+	p {
+		@include font(1rem, 600, center);
+		@include box(null, 0.3rem 3rem);
+		@include color($text-card, null);
+	}
+	.total {
+		@include box(null, 2rem 0 0);
+	}
+	button {
+		@include color($white, $btn-pay);
+		@include border(none, 0.25rem);
+		@include size(80%, null);
+		@include box(1rem, 3rem auto);
+		@include flex(center, null, null, null);
+		transition: all 0.5s;
+		&:hover {
+			@include color($white, #2f2399);
+		}
+	}
+}

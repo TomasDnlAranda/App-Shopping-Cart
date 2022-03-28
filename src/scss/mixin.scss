@@ -1,0 +1,37 @@
+@mixin font($fs, $fw, $align) {
+	font-size: $fs;
+	font-weight: $fw;
+	text-align: $align;
+}
+@mixin box($p, $m) {
+	padding: $p;
+	margin: $m;
+}
+@mixin color($color, $bg) {
+	color: $color;
+	background: $bg;
+}
+@mixin flex($jc, $ai, $fd, $wrap) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+	flex-direction: $fd;
+	flex-wrap: $wrap;
+}
+@mixin size($w, $h) {
+	width: $w;
+	height: $h;
+}
+@mixin border($b, $br) {
+	border: $b;
+	border-radius: $br;
+}
+@mixin btn-hover($bg, $bg-h) {
+	border {
+		background: $bg;
+		transition: all 0.5 s;
+		&:hover {
+			background: $bg-h;
+		}
+	}
+}

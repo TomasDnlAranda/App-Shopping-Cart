@@ -1,0 +1,18 @@
+@import './variable.scss';
+@import './mixin.scss';
+@import './card.scss';
+@import './navbar.scss';
+@import './carrito.scss';
+
+* {
+	box-sizing: border-box;
+}
+
+.container-all {
+	@include flex(null, null, row, null);
+}
+
+.container-product {
+	@include flex(space-evenly, null, row, wrap);
+	@include size(60%, null);
+}

@@ -1,0 +1,76 @@
+.carrito__container {
+  border: 1px solid #cacaca;
+  margin: 0.5rem 0.5rem;
+  width: 40%;
+}
+
+.carrito__container h3 {
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+
+.carrito__container div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555555;
+  margin: 0 0 0.5rem;
+}
+
+.carrito__container div .cantidad {
+  width: 10%;
+}
+
+.carrito__container div .price {
+  width: 40%;
+}
+
+.carrito__container div .disco {
+  width: 40%;
+}
+
+.carrito__container .total,
+.carrito__container p {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.3rem 3rem;
+  color: #555555;
+}
+
+.carrito__container .total {
+  margin: 2rem 0 0;
+}
+
+.carrito__container button {
+  color: #ffffff;
+  background: #4c39ff;
+  border: none;
+  border-radius: 0.25rem;
+  width: 80%;
+  padding: 1rem;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.carrito__container button:hover {
+  color: #ffffff;
+  background: #2f2399;
+}
+/*# sourceMappingURL=carrito.css.map */
